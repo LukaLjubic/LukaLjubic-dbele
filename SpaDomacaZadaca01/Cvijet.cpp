@@ -6,9 +6,9 @@
 using namespace sf;
 using namespace std;
 
-Cvijet::Cvijet(sf::RenderWindow* window)
+Cvijet::Cvijet(RenderWindow* window)
 {
-	this->window = window;
+	this->window = window; //Tu bi mozda bilo bolje radit sa private seterima. Ali nam ne treba za ovaj zadatak
 }
 
 CircleShape set_background() {
