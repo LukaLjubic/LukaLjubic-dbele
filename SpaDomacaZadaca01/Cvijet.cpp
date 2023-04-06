@@ -75,7 +75,7 @@ RectangleShape set_stem() {
 	return stem;
 }
 
-void play_animation(list<Drawable*> shapes, RenderWindow* window, CircleShape &sun, CircleShape& bg) {
+void play_animation(list<Drawable*> shapes, RenderWindow* &window, CircleShape &sun, CircleShape& bg) {
 	
 	while (window->isOpen())
 	{
@@ -109,7 +109,6 @@ void play_animation(list<Drawable*> shapes, RenderWindow* window, CircleShape &s
 }
 
 
-//Samo komentar da vidim kako je na githubu
 
 void innit(RenderWindow* window) {
 	CircleShape bg = set_background();
@@ -134,7 +133,7 @@ void innit(RenderWindow* window) {
 		&ground};
 
 	
-	//Tu saljem sun i bg jer moram sa njima radit animaciju
+	//Tu saljem i sun i bg jer moram sa njima radit animaciju
 	play_animation(shapes, window, sun, bg);
 }
 
